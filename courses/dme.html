@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diploma in Marine Engineering (DME) – Global Cadet Ship</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; }
+    .course-detail-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 48px; align-items: start; }
+    .course-sidebar { position: sticky; top: 100px; }
+    .sidebar-card { background: var(--white); border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); border: 1px solid var(--gray-light); overflow: hidden; }
+    .sidebar-card-header { background: var(--navy); padding: 22px; text-align: center; }
+    .sidebar-card-header h3 { color: var(--white); font-size: 1.05rem; font-weight: 800; margin-bottom: 6px; }
+    .sidebar-card-header p { color: rgba(255,255,255,0.7); font-size: 0.82rem; }
+    .sidebar-card-body { padding: 22px; }
+    .sidebar-info-item { display: flex; gap: 12px; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid var(--gray-light); }
+    .sidebar-info-item:last-child { border-bottom: none; }
+    .sidebar-info-item i { color: var(--gold); font-size: 0.95rem; margin-top: 2px; flex-shrink:0; }
+    .sidebar-info-item .si-label { font-size: 0.73rem; font-weight: 700; text-transform: uppercase; color: var(--gray); }
+    .sidebar-info-item .si-val { font-size: 0.88rem; font-weight: 700; color: var(--text-dark); }
+    .course-main h2 { font-size: 1.5rem; font-weight: 800; color: var(--text-dark); margin: 32px 0 12px; }
+    .course-main h2:first-child { margin-top: 0; }
+    .course-main p { font-size: 0.92rem; color: var(--text-body); line-height: 1.75; margin-bottom: 14px; }
+    .highlight-box { background: rgba(13,33,68,0.04); border-left: 4px solid var(--navy); border-radius: var(--radius); padding: 16px 20px; margin: 20px 0; }
+    .highlight-box p { margin-bottom: 0; font-weight: 600; color: var(--text-dark); }
+    .enquiry-card { background: var(--white); border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); border: 1px solid var(--gray-light); overflow: hidden; }
+    .enquiry-card-header { background: var(--navy); padding: 18px 22px; }
+    .enquiry-card-header h3 { color: var(--white); font-size: 1rem; font-weight: 800; margin: 0; }
+    .enquiry-card-body { padding: 18px 22px; }
+    .enquiry-form { display: flex; flex-direction: column; gap: 10px; }
+    .enquiry-form input, .enquiry-form select, .enquiry-form textarea { width: 100%; padding: 11px 14px; border: 1px solid #d1d9e0; border-radius: 8px; font-size: 0.88rem; font-family: inherit; color: var(--text-dark); background: var(--white); outline: none; box-sizing: border-box; transition: border-color 0.2s; }
+    .enquiry-form input::placeholder, .enquiry-form textarea::placeholder { color: #9eaab6; }
+    .enquiry-form select { color: #9eaab6; appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%239eaab6' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; padding-right: 36px; }
+    .enquiry-form select.selected { color: var(--text-dark); }
+    .enquiry-form input:focus, .enquiry-form select:focus, .enquiry-form textarea:focus { border-color: var(--navy); }
+    .enquiry-form textarea { resize: vertical; min-height: 90px; }
+    .enquiry-submit { background: var(--navy); color: var(--white); border: none; border-radius: 8px; padding: 13px; font-size: 0.93rem; font-weight: 700; cursor: pointer; font-family: inherit; transition: background 0.2s; }
+    .enquiry-submit:hover { background: #0a1f44; }
+    @media(max-width:900px){ .course-detail-grid { grid-template-columns: 1fr; } .course-sidebar { position: static; } }
+  </style>
+</head>
+<body>
+<!-- NAVBAR -->
+<nav class="navbar-pill-wrap page-nav" id="mainNav">
+  <div class="pill-logo-group">
+    <a href="../index.html" class="pill-logo">
+      <img src="../assets/images/logo.png" alt="Global Cadet Ship" />
+    </a>
+    <div class="pill-brand-beside">
+      <span class="pbb-name">Global Cadet Ship</span>
+      <span class="pbb-sub">Merchant Navy Career Guidance</span>
+    </div>
+  </div>
+  <div class="nav-pill" id="navPill">
+    <ul class="pill-menu">
+      <li><a href="../index.html" class="pill-link">Home</a></li>
+      <li><a href="../about.html" class="pill-link">About Us</a></li>
+      <li><a href="../merchant-navy.html" class="pill-link">Merchant Navy</a></li>
+            <li class="pill-item-dropdown">
+        <a href="../courses.html" class="pill-link">Join Merchant Navy <i class="fas fa-chevron-down"></i></a>
+        <div class="pill-dropdown">
+          <div class="pill-has-sub">
+            <a href="../courses/deck-department.html">Deck Department <i class="fas fa-chevron-right"></i></a>
+            <div class="pill-sub-dropdown">
+              <a href="../courses/bsc-nautical-science.html">B.Sc. Nautical Science</a>
+              <a href="../courses/dns.html">Diploma in Nautical Science (DNS)</a>
+            </div>
+          </div>
+          <div class="pill-has-sub">
+            <a href="../courses/engine-department.html">Engine Department <i class="fas fa-chevron-right"></i></a>
+            <div class="pill-sub-dropdown">
+              <a href="../courses/be-marine-engineering.html">B.E. Marine Engineering</a>
+              <a href="../courses/dme.html">Diploma in Marine Engineering</a>
+              <a href="../courses/gme.html">Graduate Marine Engineering (GME)</a>
+            </div>
+          </div>
+          <a href="#">Saloon Department</a>
+          <a href="#">ETO Department</a>
+          <a href="../courses/gp-rating.html">GPR Department</a>
+        </div>
+      </li>
+      <li><a href="../supporters.html" class="pill-link">Our Supporters</a></li>
+    </ul>
+  </div>
+  <a href="../contact.html" class="pill-cta">Contact Us</a>
+  <div class="pill-hamburger" id="pillHamburger"><span></span><span></span><span></span></div>
+</nav>
+<div class="page-hero" style="padding-top:96px;">
+  <div class="container">
+    <h1>Diploma in Marine Engineering (DME)</h1>
+    <p>2-Year DGS-Approved Programme for Diploma Holders – Fast-track to a Marine Engineer career</p>
+    <div class="breadcrumb"><a href="../index.html">Home</a><i class="fas fa-angle-right"></i><a href="../courses.html">Courses</a><i class="fas fa-angle-right"></i><span>Diploma in Marine Engineering</span></div>
+  </div>
+</div>
+<section class="section">
+  <div class="container">
+    <div class="course-detail-grid">
+      <div class="course-main">
+        <div class="img-placeholder" style="height:280px; margin-bottom:32px;"><i class="fas fa-image"></i><span>Course Photo Coming Soon</span></div>
+        <h2>Diploma in Marine Engineering (DME) – 2 Year Programme</h2>
+        <p>The Diploma in Marine Engineering (DME) Programme is specially designed for <strong>diploma holders</strong> aspiring to build a successful career as Marine Engineers in the Merchant Navy.</p>
+        <p>This intensive pre-sea training programme provides advanced technical knowledge and practical training in marine engineering systems, ship machinery operations, propulsion systems, marine electrical technology, automation, safety procedures, maintenance practices, and engine room management as per international maritime standards.</p>
+        <p>The programme combines classroom learning, simulator training, workshop practice, and onboard familiarization to prepare candidates for technical and operational responsibilities onboard merchant vessels.</p>
+        <div class="highlight-box">
+          <p><i class="fas fa-certificate" style="color:var(--gold); margin-right:8px;"></i> Approved by the Directorate General of Shipping (DGS), Government of India | 2-Year Full-Time Residential Programme</p>
+        </div>
+        <h2>After Course Completion</h2>
+        <p>Upon successful completion of the course, cadets become eligible to join ships as <strong>Trainee Marine Engineers / Junior Engineers</strong>. After completing the required onboard sea service and competency examinations, candidates become eligible to obtain the <strong>Marine Engineer Officer (MEO) Class IV Certificate of Competency</strong>.</p>
+        <h2>Career Growth Path</h2>
+        <div class="career-path">
+          <div class="career-step top">Diploma in Marine Engineering (2 Years)</div>
+          <div class="career-arrow"><i class="fas fa-arrow-down"></i></div>
+          <div class="career-step">Trainee Marine Engineer / Junior Engineer</div>
+          <div class="career-arrow"><i class="fas fa-arrow-down"></i></div>
+          <div class="career-step">MEO Class IV Certificate of Competency</div>
+          <div class="career-arrow"><i class="fas fa-arrow-down"></i></div>
+          <div class="career-step">4th Engineer → 3rd Engineer → 2nd Engineer</div>
+          <div class="career-arrow"><i class="fas fa-arrow-down"></i></div>
+          <div class="career-step">MEO Class I Exam</div>
+          <div class="career-arrow"><i class="fas fa-arrow-down"></i></div>
+          <div class="career-step highlight">Chief Engineer &#9875;</div>
+        </div>
+      </div>
+      <div class="course-sidebar">
+        <div class="enquiry-card" style="margin-top:20px;">
+          <div class="enquiry-card-header">
+            <h3>Enquiry With Us</h3>
+          </div>
+          <div class="enquiry-card-body">
+            <form class="enquiry-form" onsubmit="return false;">
+              <input type="text" placeholder="Full Name" />
+              <input type="email" placeholder="Email Address" />
+              <input type="tel" placeholder="Phone" />
+              <input type="text" placeholder="City/Town" />
+              <input type="text" placeholder="State" />
+              <select>
+                <option value="" disabled selected>Select Course</option>
+                <option>B.Sc. Nautical Science</option>
+                <option>Diploma in Nautical Science (DNS)</option>
+                <option>B.E. Marine Engineering</option>
+                <option>Diploma in Marine Engineering (DME)</option>
+                <option>Graduate Marine Engineering (GME)</option>
+                <option>GP Rating</option>
+              </select>
+              <textarea placeholder="Message" rows="4"></textarea>
+              <button type="submit" class="enquiry-submit">Submit Now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+<div class="cta-banner">
+  <div class="container">
+    <h2>Ready to Join as a Marine Engineer?</h2>
+    <p>Contact our free counselling team for DME admission guidance and career roadmap.</p>
+    <div class="cta-buttons"><a href="../contact.html" class="btn-primary"><i class="fas fa-phone"></i> Get Free Guidance</a><a href="../courses.html" class="btn-outline"><i class="fas fa-book"></i> All Courses</a></div>
+  </div>
+</div>
+<footer class="footer"><div class="container"><div class="footer-grid"><div><div class="footer-brand"><img src="../assets/images/logo.png" alt="Global Cadet Ship" /><div class="footer-brand-text"><div class="name">Global Cadet Ship</div><div class="tagline">Merchant Navy Guidance</div></div></div><p class="footer-desc">Free Merchant Navy career guidance across India.</p><div class="footer-social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-whatsapp"></i></a></div></div><div class="footer-col"><h4>Quick Links</h4><ul class="footer-links"><li><a href="../index.html"><i class="fas fa-angle-right"></i> Home</a></li><li><a href="../about.html"><i class="fas fa-angle-right"></i> About Us</a></li><li><a href="../courses.html"><i class="fas fa-angle-right"></i> Courses</a></li><li><a href="../contact.html"><i class="fas fa-angle-right"></i> Contact Us</a></li></ul></div><div class="footer-col"><h4>Courses</h4><ul class="footer-links"><li><a href="bsc-nautical-science.html"><i class="fas fa-angle-right"></i> B.Sc. Nautical Science</a></li><li><a href="dns.html"><i class="fas fa-angle-right"></i> DNS</a></li><li><a href="be-marine-engineering.html"><i class="fas fa-angle-right"></i> B.E. Marine Eng.</a></li><li><a href="dme.html"><i class="fas fa-angle-right"></i> DME</a></li><li><a href="gme.html"><i class="fas fa-angle-right"></i> GME</a></li><li><a href="gp-rating.html"><i class="fas fa-angle-right"></i> GP Rating</a></li></ul></div><div class="footer-col"><h4>Contact Us</h4><div class="footer-contact"><div class="footer-contact-item"><i class="fas fa-phone"></i><span>+91 99999 99999</span></div><div class="footer-contact-item"><i class="fas fa-envelope"></i><span>info@globalcadetship.com</span></div></div></div></div><div class="footer-bottom"><span>&copy; 2025 Global Cadet Ship. All Rights Reserved.</span></div></div></footer>
+<button class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us – Global Cadet Ship</title>
+  <meta name="description" content="Learn about the Global Cadet Ship Program – a welfare initiative by the Global Seafarers Organization offering free Merchant Navy career guidance." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; }
+    .about-section h2 { font-size: 1.7rem; font-weight: 800; color: var(--text-dark); margin-bottom: 16px; }
+    .about-section p { font-size: 0.95rem; color: var(--text-body); line-height: 1.8; margin-bottom: 14px; }
+    .about-section ul { margin: 12px 0 18px 0; padding: 0; list-style: none; }
+    .about-section ul li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.93rem; color: var(--text-body); line-height: 1.7; margin-bottom: 8px; }
+    .about-section ul li::before { content: ''; display: inline-block; width: 8px; height: 8px; background: var(--gold); border-radius: 50%; flex-shrink: 0; margin-top: 7px; }
+    .about-highlight { background: rgba(201,168,76,0.10); border-left: 4px solid var(--gold); border-radius: var(--radius); padding: 18px 22px; margin: 24px 0; }
+    .about-highlight p { margin-bottom: 0; font-size: 0.94rem; font-weight: 600; color: var(--text-dark); line-height: 1.7; }
+    .supported-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 20px 0; }
+    @media(max-width:600px){ .supported-grid { grid-template-columns: 1fr; } }
+    .supported-item { display: flex; align-items: center; gap: 12px; background: var(--off-white); border-radius: var(--radius); padding: 14px 18px; border: 1px solid var(--gray-light); }
+    .supported-item i { color: var(--gold); font-size: 1.1rem; flex-shrink: 0; }
+    .supported-item span { font-size: 0.88rem; font-weight: 600; color: var(--text-dark); }
+    .commitment-list { display: flex; flex-direction: column; gap: 12px; margin: 20px 0; }
+    .commitment-item { display: flex; align-items: center; gap: 14px; background: var(--off-white); border-radius: var(--radius); padding: 14px 18px; border: 1px solid var(--gray-light); }
+    .commitment-item i { color: var(--navy); font-size: 1rem; flex-shrink: 0; width: 20px; text-align: center; }
+    .commitment-item span { font-size: 0.91rem; font-weight: 600; color: var(--text-dark); }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar-pill-wrap page-nav" id="mainNav">
+  <div class="pill-logo-group">
+    <a href="index.html" class="pill-logo">
+      <img src="assets/images/logo.png" alt="Global Cadet Ship" />
+    </a>
+    <div class="pill-brand-beside">
+      <span class="pbb-name">Global Cadet Ship</span>
+      <span class="pbb-sub">Merchant Navy Career Guidance</span>
+    </div>
+  </div>
+  <div class="nav-pill" id="navPill">
+    <ul class="pill-menu">
+      <li><a href="index.html" class="pill-link">Home</a></li>
+      <li><a href="about.html" class="pill-link active">About Us</a></li>
+      <li><a href="merchant-navy.html" class="pill-link">Merchant Navy</a></li>
+            <li class="pill-item-dropdown">
+        <a href="courses.html" class="pill-link">Join Merchant Navy <i class="fas fa-chevron-down"></i></a>
+        <div class="pill-dropdown">
+          <div class="pill-has-sub">
+            <a href="courses/deck-department.html">Deck Department <i class="fas fa-chevron-right"></i></a>
+            <div class="pill-sub-dropdown">
+              <a href="courses/bsc-nautical-science.html">B.Sc. Nautical Science</a>
+              <a href="courses/dns.html">Diploma in Nautical Science (DNS)</a>
+            </div>
+          </div>
+          <div class="pill-has-sub">
+            <a href="courses/engine-department.html">Engine Department <i class="fas fa-chevron-right"></i></a>
+            <div class="pill-sub-dropdown">
+              <a href="courses/be-marine-engineering.html">B.E. Marine Engineering</a>
+              <a href="courses/dme.html">Diploma in Marine Engineering</a>
+              <a href="courses/gme.html">Graduate Marine Engineering (GME)</a>
+            </div>
+          </div>
+          <a href="#">Saloon Department</a>
+          <a href="#">ETO Department</a>
+          <a href="courses/gp-rating.html">GPR Department</a>
+        </div>
+      </li>
+      <li><a href="supporters.html" class="pill-link">Our Supporters</a></li>
+    </ul>
+  </div>
+  <a href="contact.html" class="pill-cta">Contact Us</a>
+  <div class="pill-hamburger" id="pillHamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero" style="padding-top:96px;">
+  <div class="container">
+    <h1>About Us</h1>
+    <p>About Global Cadet Ship Program</p>
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <i class="fas fa-angle-right"></i>
+      <span>About Us</span>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT GLOBAL CADET SHIP PROGRAM -->
+<section class="section about-section">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-image">
+        <img src="assets/images/bb.png" alt="Deck Officer on Ship Bridge" style="width:100%; height:420px; object-fit:cover; border-radius:var(--radius-lg); display:block;" />
+      </div>
+      <div class="about-content">
+        <span class="section-badge">Who We Are</span>
+        <h2>About Global Cadet Ship Program</h2>
+        <p>The Global Cadet Ship Program is a welfare initiative established by the <strong>Global Seafarers Organization</strong> with the noble objective of guiding and supporting unemployed youth who aspire to build a successful career at sea in the Merchant Navy industry.</p>
+        <p>This initiative is supported by:</p>
+        <div class="supported-grid">
+          <div class="supported-item"><i class="fas fa-anchor"></i><span>Seafarers' Welfare Organizations</span></div>
+          <div class="supported-item"><i class="fas fa-users"></i><span>Seafarers' Trade Unions</span></div>
+          <div class="supported-item"><i class="fas fa-ship"></i><span>Shipping Companies</span></div>
+          <div class="supported-item"><i class="fas fa-university"></i><span>Reputed Maritime Training Institutes</span></div>
+        </div>
+        <p>Our mission is to provide genuine, transparent, and structured guidance for students and job seekers who wish to join the Merchant Navy.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT WE PROVIDE -->
+<section class="section section-bg about-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">Our Services</span>
+      <h2>What We <span>Provide</span></h2>
+      <p>Global Cadet Ship Program offers complete information and assistance regarding:</p>
+      <div class="divider"></div>
+    </div>
+    <div class="departments-grid">
+      <div class="dept-card">
+        <div class="dept-card-icon"><i class="fas fa-compass"></i></div>
+        <h3>Merchant Navy Career Opportunities</h3>
+        <p>Comprehensive guidance on career opportunities across Deck, Engine, ETO, GP Rating, and Catering Departments in the Merchant Navy.</p>
+      </div>
+      <div class="dept-card">
+        <div class="dept-card-icon"><i class="fas fa-graduation-cap"></i></div>
+        <h3>Eligibility &amp; Qualification Requirements</h3>
+        <p>Complete eligibility criteria and qualification requirements for all Merchant Navy courses and career paths.</p>
+      </div>
+      <div class="dept-card">
+        <div class="dept-card-icon"><i class="fas fa-university"></i></div>
+        <h3>DGS Approved Maritime Academies</h3>
+        <p>Guidance on DGS Shipping approved maritime academies and training institutes throughout India.</p>
+      </div>
+      <div class="dept-card">
+        <div class="dept-card-icon"><i class="fas fa-handshake"></i></div>
+        <h3>Sponsorship Programs &amp; Guidance</h3>
+        <p>Information about shipping companies offering employment and sponsorship opportunities for qualified cadets.</p>
+      </div>
+      <div class="dept-card">
+        <div class="dept-card-icon"><i class="fas fa-piggy-bank"></i></div>
+        <h3>Educational Loan &amp; Bank Loan Information</h3>
+        <p>Assistance with information regarding educational loans and bank loan options available for maritime training programmes.</p>
+      </div>
+      <div class="dept-card">
+        <div class="dept-card-icon"><i class="fas fa-user-graduate"></i></div>
+        <h3>Admission Assistance</h3>
+        <p>Admission assistance through certified career counsellors for reputed government-approved maritime training institutes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STUDENT GUIDANCE & CAREER SUPPORT -->
+<section class="section about-section">
+  <div class="container">
+    <div class="why-grid">
+      <div class="why-content">
+        <span class="section-badge">Career Support</span>
+        <h2>Student Guidance &amp; <span>Career Support</span></h2>
+        <p>Our experienced and certified counsellors provide professional support to interested candidates in selecting suitable courses and securing admission in reputed government-approved maritime institutes.</p>
+        <p>We also assist students by providing information regarding sponsorship opportunities from reputed shipping companies before joining Merchant Navy training programs.</p>
+        <div class="why-features" style="margin-top:24px;">
+          <div class="why-feature">
+            <div class="why-feature-icon"><i class="fas fa-certificate"></i></div>
+            <div class="why-feature-text">
+              <h4>Certified Counsellors</h4>
+              <p>Professional guidance from certified maritime career counsellors with in-depth industry knowledge.</p>
+            </div>
+          </div>
+          <div class="why-feature">
+            <div class="why-feature-icon"><i class="fas fa-ship"></i></div>
+            <div class="why-feature-text">
+              <h4>Sponsorship Information</h4>
+              <p>Up-to-date information about sponsorship programs from reputed shipping companies for cadets.</p>
+            </div>
+          </div>
+          <div class="why-feature">
+            <div class="why-feature-icon"><i class="fas fa-door-open"></i></div>
+            <div class="why-feature-text">
+              <h4>Admission Guidance</h4>
+              <p>End-to-end support for securing admission in government-approved maritime training institutes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="why-image">
+        <img src="assets/images/cadets-lecture.png" alt="Maritime Cadets in Lecture" style="width:100%; height:400px; object-fit:cover; border-radius:var(--radius-lg); display:block;" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUR COMMITMENT -->
+<section class="section section-bg about-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">Our Commitment</span>
+      <h2>Simplifying Your Path to <span>Merchant Navy</span></h2>
+      <p>The Global Cadet Ship Program is designed to simplify the entire process of joining the Merchant Navy through:</p>
+      <div class="divider"></div>
+    </div>
+    <div class="commitment-list" style="max-width:680px; margin:0 auto;">
+      <div class="commitment-item"><i class="fas fa-route"></i><span>Structured career guidance</span></div>
+      <div class="commitment-item"><i class="fas fa-map-marked-alt"></i><span>Step-by-step career roadmaps</span></div>
+      <div class="commitment-item"><i class="fas fa-book-open"></i><span>Complete course information</span></div>
+      <div class="commitment-item"><i class="fas fa-building"></i><span>Institute and company details</span></div>
+      <div class="commitment-item"><i class="fas fa-shield-alt"></i><span>Transparent counselling support</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- IMPORTANT NOTE -->
+<section class="section about-section">
+  <div class="container" style="max-width:820px;">
+    <div class="section-header">
+      <span class="section-badge">Important Note</span>
+      <h2>Our <span>Free Service</span> Commitment</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="about-highlight">
+      <p><i class="fas fa-info-circle" style="color:var(--gold); margin-right:8px;"></i> We do not charge any fees from students for providing career guidance, counselling support, or information related to Merchant Navy education and opportunities.</p>
+    </div>
+    <p style="font-size:0.95rem; color:var(--text-body); line-height:1.8; text-align:center;">Our aim is to support and empower aspiring seafarers by helping them access accurate information and genuine career opportunities in the maritime industry.</p>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-banner">
+  <div class="container">
+    <h2>Start Your Maritime Career Journey Today</h2>
+    <p>Talk to our certified counsellors and get free, genuine guidance on your Merchant Navy career path.</p>
+    <div class="cta-buttons">
+      <a href="contact.html" class="btn-primary"><i class="fas fa-phone"></i> Contact Us Now</a>
+      <a href="courses.html" class="btn-outline"><i class="fas fa-book"></i> Explore Courses</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="assets/images/logo.png" alt="Global Cadet Ship" />
+          <div class="footer-brand-text">
+            <div class="name">Global Cadet Ship</div>
+            <div class="tagline">Merchant Navy Guidance</div>
+          </div>
+        </div>
+        <p class="footer-desc">A welfare initiative by the Global Seafarers Organization, providing free Merchant Navy career guidance across India.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html"><i class="fas fa-angle-right"></i> Home</a></li>
+          <li><a href="about.html"><i class="fas fa-angle-right"></i> About Us</a></li>
+          <li><a href="merchant-navy.html"><i class="fas fa-angle-right"></i> Merchant Navy</a></li>
+          <li><a href="courses.html"><i class="fas fa-angle-right"></i> Courses</a></li>
+          <li><a href="supporters.html"><i class="fas fa-angle-right"></i> Our Supporters</a></li>
+          <li><a href="contact.html"><i class="fas fa-angle-right"></i> Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Our Courses</h4>
+        <ul class="footer-links">
+          <li><a href="courses/bsc-nautical-science.html"><i class="fas fa-angle-right"></i> B.Sc. Nautical Science</a></li>
+          <li><a href="courses/dns.html"><i class="fas fa-angle-right"></i> Diploma in Nautical Science</a></li>
+          <li><a href="courses/be-marine-engineering.html"><i class="fas fa-angle-right"></i> B.E. Marine Engineering</a></li>
+          <li><a href="courses/dme.html"><i class="fas fa-angle-right"></i> Diploma in Marine Eng.</a></li>
+          <li><a href="courses/gme.html"><i class="fas fa-angle-right"></i> Graduate Marine Eng.</a></li>
+          <li><a href="courses/gp-rating.html"><i class="fas fa-angle-right"></i> GP Rating Course</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="footer-contact">
+          <div class="footer-contact-item"><i class="fas fa-phone"></i><span>+91 99999 99999</span></div>
+          <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>info@globalcadetship.com</span></div>
+          <div class="footer-contact-item"><i class="fab fa-whatsapp"></i><span>WhatsApp: +91 99999 99999</span></div>
+          <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>India</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Global Cadet Ship. All Rights Reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Disclaimer</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<button class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

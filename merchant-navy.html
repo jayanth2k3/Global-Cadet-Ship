@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What is Merchant Navy – Global Cadet Ship</title>
+  <meta name="description" content="Learn everything about Merchant Navy – career paths, departments, types of ships, and how to join the merchant fleet." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; }
+    .mn-intro { background: var(--off-white); }
+    .ships-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; }
+    .ship-tag {
+      background: var(--white);
+      border: 1px solid var(--gray-light);
+      border-left: 4px solid var(--gold);
+      border-radius: var(--radius);
+      padding: 14px 16px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      display: flex; align-items: center; gap: 10px;
+    }
+    .ship-tag i { color: var(--gold); }
+    @media(max-width:768px){ .ships-grid { grid-template-columns: repeat(2,1fr); } }
+    @media(max-width:480px){ .ships-grid { grid-template-columns: 1fr; } }
+    .career-benefit {
+      display: flex; align-items: flex-start; gap: 14px;
+      padding: 16px;
+      background: var(--white);
+      border-radius: var(--radius);
+      border: 1px solid var(--gray-light);
+      margin-bottom: 12px;
+      transition: box-shadow 0.2s;
+    }
+    .career-benefit:hover { box-shadow: var(--shadow); }
+    .career-benefit i { color: var(--gold); font-size: 1.1rem; margin-top: 2px; flex-shrink:0; }
+    .career-benefit span { font-size: 0.88rem; color: var(--text-body); font-weight: 500; }
+    .dept-detail { margin-bottom: 48px; }
+    .dept-detail h3 { font-size: 1.25rem; font-weight: 800; color: var(--text-dark); margin-bottom: 10px; display: flex; align-items: center; gap: 12px; }
+    .dept-detail h3 i { color: var(--gold); }
+    .dept-detail p { font-size: 0.9rem; color: var(--text-body); line-height: 1.7; margin-bottom: 12px; }
+    .resp-list { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+    .resp-tag { background: rgba(13,33,68,0.06); color: var(--navy); font-size: 0.78rem; font-weight: 600; padding: 5px 12px; border-radius: 50px; }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar-pill-wrap page-nav" id="mainNav">
+  <div class="pill-logo-group">
+    <a href="index.html" class="pill-logo">
+      <img src="assets/images/logo.png" alt="Global Cadet Ship" />
+    </a>
+    <div class="pill-brand-beside">
+      <span class="pbb-name">Global Cadet Ship</span>
+      <span class="pbb-sub">Merchant Navy Career Guidance</span>
+    </div>
+  </div>
+  <div class="nav-pill" id="navPill">
+    <ul class="pill-menu">
+      <li><a href="index.html" class="pill-link">Home</a></li>
+      <li><a href="about.html" class="pill-link">About Us</a></li>
+      <li><a href="merchant-navy.html" class="pill-link active">Merchant Navy</a></li>
+            <li class="pill-item-dropdown">
+        <a href="courses.html" class="pill-link">Join Merchant Navy <i class="fas fa-chevron-down"></i></a>
+        <div class="pill-dropdown">
+          <div class="pill-has-sub">
+            <a href="courses/deck-department.html">Deck Department <i class="fas fa-chevron-right"></i></a>
+            <div class="pill-sub-dropdown">
+              <a href="courses/bsc-nautical-science.html">B.Sc. Nautical Science</a>
+              <a href="courses/dns.html">Diploma in Nautical Science (DNS)</a>
+            </div>
+          </div>
+          <div class="pill-has-sub">
+            <a href="courses/engine-department.html">Engine Department <i class="fas fa-chevron-right"></i></a>
+            <div class="pill-sub-dropdown">
+              <a href="courses/be-marine-engineering.html">B.E. Marine Engineering</a>
+              <a href="courses/dme.html">Diploma in Marine Engineering</a>
+              <a href="courses/gme.html">Graduate Marine Engineering (GME)</a>
+            </div>
+          </div>
+          <a href="#">Saloon Department</a>
+          <a href="#">ETO Department</a>
+          <a href="courses/gp-rating.html">GPR Department</a>
+        </div>
+      </li>
+      <li><a href="supporters.html" class="pill-link">Our Supporters</a></li>
+    </ul>
+  </div>
+  <a href="contact.html" class="pill-cta">Contact Us</a>
+  <div class="pill-hamburger" id="pillHamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero" style="padding-top:96px;">
+  <div class="container">
+    <h1>What is Merchant Navy?</h1>
+    <p>The backbone of global maritime trade — explore the world, earn well, and build a lifelong career at sea.</p>
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <i class="fas fa-angle-right"></i>
+      <span>Merchant Navy</span>
+    </div>
+  </div>
+</div>
+
+<!-- WHAT IS MN -->
+<section class="section">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-content">
+        <span class="section-badge">Overview</span>
+        <h2>The <span>Backbone</span> of Global Trade</h2>
+        <p>The Merchant Navy is the backbone of global maritime trade and international transportation. It is a non-combat commercial shipping industry responsible for transporting cargo, oil, gas, vehicles, raw materials, containers, and passengers across international waters.</p>
+        <p>Unlike the Naval forces, which are meant for national defense and military operations, the Merchant Navy focuses entirely on commercial shipping operations and global trade logistics.</p>
+        <p>Today, more than <strong>90% of world trade is carried by sea</strong>, making the Merchant Navy one of the most essential industries supporting the global economy. Merchant Navy vessels are owned and operated by government organizations, multinational shipping corporations, offshore companies, and private shipping operators worldwide.</p>
+      </div>
+      <div class="about-image">
+        <img src="assets/images/port-night.png" alt="Container Port at Night" style="width:100%; height:360px; object-fit:cover; border-radius:var(--radius-lg); display:block;" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CAREER BENEFITS -->
+<section class="section section-bg">
+  <div class="container">
+    <div class="why-grid">
+      <div class="why-image">
+        <div class="img-placeholder" style="min-height:360px;">
+          <i class="fas fa-image"></i>
+          <span>Photo Coming Soon</span>
+        </div>
+      </div>
+      <div class="why-content">
+        <span class="section-badge">Career Benefits</span>
+        <h2>Why Choose <span>Merchant Navy</span> as a Career?</h2>
+        <p>Merchant Navy is considered one of the most respected, adventurous, and financially rewarding international careers. A career at sea offers:</p>
+        <div style="margin-top:20px;">
+          <div class="career-benefit"><i class="fas fa-rupee-sign"></i><span>Excellent salary packages with international pay scales</span></div>
+          <div class="career-benefit"><i class="fas fa-globe"></i><span>International work environment and global travel opportunities</span></div>
+          <div class="career-benefit"><i class="fas fa-percentage"></i><span>Tax benefits (subject to applicable regulations)</span></div>
+          <div class="career-benefit"><i class="fas fa-chart-line"></i><span>Fast career growth and officer-level promotions</span></div>
+          <div class="career-benefit"><i class="fas fa-cogs"></i><span>Technical specialization and leadership development</span></div>
+          <div class="career-benefit"><i class="fas fa-anchor"></i><span>Shore-based career options in maritime industry management</span></div>
+          <div class="career-benefit"><i class="fas fa-ship"></i><span>Work on Indian and foreign-going vessels worldwide</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEPARTMENTS -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">Departments</span>
+      <h2>Merchant Navy <span>Departments</span></h2>
+      <p>A merchant vessel is generally divided into major departments. Choose your path and build a rewarding career at sea.</p>
+      <div class="divider"></div>
+    </div>
+
+    <!-- Deck -->
+    <div class="dept-detail">
+      <h3><i class="fas fa-compass"></i> Deck Department</h3>
+      <p>Deck officers operate and navigate the vessel while ensuring safe cargo handling and compliance with international navigation rules. The Deck Department is responsible for:</p>
+      <div class="resp-list">
+        <span class="resp-tag">Ship Navigation</span>
+        <span class="resp-tag">Voyage Planning</span>
+        <span class="resp-tag">Cargo Operations</span>
+        <span class="resp-tag">Bridge Watchkeeping</span>
+        <span class="resp-tag">Ship Stability</span>
+        <span class="resp-tag">Safety Management</span>
+        <span class="resp-tag">Maritime Communication</span>
+        <span class="resp-tag">Port Operations</span>
+      </div>
+      <p><strong>Career Path:</strong> DNS / B.Sc Nautical Science → Deck Cadet → Third Officer → Second Officer → Chief Officer → <strong>Captain / Master Mariner</strong></p>
+      <a href="courses/bsc-nautical-science.html" class="btn-gold" style="display:inline-flex; margin-top:10px;"><i class="fas fa-book"></i> View Deck Courses</a>
+    </div>
+
+    <!-- Engine -->
+    <div class="dept-detail">
+      <h3><i class="fas fa-cogs"></i> Engine Department</h3>
+      <p>The Engine Department manages all mechanical and technical systems onboard. Marine Engineers ensure smooth and safe operation of:</p>
+      <div class="resp-list">
+        <span class="resp-tag">Main Propulsion Engines</span>
+        <span class="resp-tag">Auxiliary Machinery</span>
+        <span class="resp-tag">Boilers &amp; Pumps</span>
+        <span class="resp-tag">Fuel Systems</span>
+        <span class="resp-tag">Refrigeration Systems</span>
+        <span class="resp-tag">Power Generation</span>
+        <span class="resp-tag">Ship Machinery Maintenance</span>
+      </div>
+      <p><strong>Career Path:</strong> B.E. Marine / GME / DME → Trainee Marine Engineer → 4th Engineer → 3rd Engineer → 2nd Engineer → <strong>Chief Engineer</strong></p>
+      <a href="courses/be-marine-engineering.html" class="btn-gold" style="display:inline-flex; margin-top:10px;"><i class="fas fa-book"></i> View Engine Courses</a>
+    </div>
+
+    <!-- ETO -->
+    <div class="dept-detail">
+      <h3><i class="fas fa-bolt"></i> Electro Technical Officer (ETO)</h3>
+      <p>The ETO is responsible for all electrical, automation, and electronic systems onboard. Modern vessels rely heavily on advanced automation, making ETOs one of the most important technical officers.</p>
+      <div class="resp-list">
+        <span class="resp-tag">Electrical Systems</span>
+        <span class="resp-tag">Automation Systems</span>
+        <span class="resp-tag">Navigation Electronics</span>
+        <span class="resp-tag">Communication Systems</span>
+        <span class="resp-tag">High Voltage Systems</span>
+        <span class="resp-tag">Engine Control Systems</span>
+      </div>
+      <p><strong>Career Path:</strong> Trainee ETO → Electro Technical Officer → Senior ETO → Electrical Superintendent / Technical Management</p>
+    </div>
+
+    <!-- GP Rating -->
+    <div class="dept-detail">
+      <h3><i class="fas fa-anchor"></i> GP Ratings (General Purpose Ratings)</h3>
+      <p>GP Ratings assist both Deck and Engine Departments. They are responsible for maintenance, watchkeeping, mooring, cargo assistance, and machinery support. With sea service and examinations, GP Ratings can progress toward officer-level positions.</p>
+      <a href="courses/gp-rating.html" class="btn-gold" style="display:inline-flex; margin-top:10px;"><i class="fas fa-book"></i> View GP Rating Course</a>
+    </div>
+
+    <!-- Saloon -->
+    <div class="dept-detail">
+      <h3><i class="fas fa-utensils"></i> Saloon Department</h3>
+      <p>The Saloon Department manages catering, food preparation, crew accommodation, laundry, and hospitality services onboard. Roles include Chief Steward, Cook, Steward, and Utility crew.</p>
+    </div>
+
+    <!-- Fitters -->
+    <div class="dept-detail">
+      <h3><i class="fas fa-wrench"></i> Marine Fitters &amp; Welders</h3>
+      <p>Highly skilled technical personnel responsible for fabrication, welding, pipe repairs, machinery repairs, and structural maintenance. These professionals play a vital role in ship maintenance and technical repair operations.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SHIP TYPES -->
+<section class="section section-bg">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">Fleet</span>
+      <h2>Main Types of <span>Ships</span> in Merchant Navy</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="ships-grid">
+      <div class="ship-tag"><i class="fas fa-ship"></i> Container Ship</div>
+      <div class="ship-tag"><i class="fas fa-ship"></i> Bulk Carrier</div>
+      <div class="ship-tag"><i class="fas fa-ship"></i> Oil Tanker</div>
+      <div class="ship-tag"><i class="fas fa-ship"></i> Chemical Tanker</div>
+      <div class="ship-tag"><i class="fas fa-ship"></i> LNG / LPG Gas Carrier</div>
+      <div class="ship-tag"><i class="fas fa-ship"></i> General Cargo Ship</div>
+      <div class="ship-tag"><i class="fas fa-ship"></i> Ro-Ro Vessel</div>
+      <div class="ship-tag"><i class="fas fa-ship"></i> Passenger / Cruise Ship</div>
+      <div class="ship-tag"><i class="fas fa-ship"></i> Offshore Supply Vessel (OSV)</div>
+      <div class="ship-tag"><i class="fas fa-ship"></i> Refrigerated Cargo Ship</div>
+      <div class="ship-tag"><i class="fas fa-ship"></i> Heavy Lift Vessel</div>
+      <div class="ship-tag"><i class="fas fa-ship"></i> Tug Boat</div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-banner">
+  <div class="container">
+    <h2>Ready to Join the Merchant Navy?</h2>
+    <p>Get free guidance from our certified counsellors and start your maritime career journey today.</p>
+    <div class="cta-buttons">
+      <a href="contact.html" class="btn-primary"><i class="fas fa-phone"></i> Get Free Counselling</a>
+      <a href="courses.html" class="btn-outline"><i class="fas fa-book"></i> Explore Courses</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="assets/images/logo.png" alt="Global Cadet Ship" />
+          <div class="footer-brand-text">
+            <div class="name">Global Cadet Ship</div>
+            <div class="tagline">Merchant Navy Guidance</div>
+          </div>
+        </div>
+        <p class="footer-desc">A welfare initiative by the Global Seafarers Organization, dedicated to guiding aspiring seafarers toward successful Merchant Navy careers — completely free of charge.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html"><i class="fas fa-angle-right"></i> Home</a></li>
+          <li><a href="about.html"><i class="fas fa-angle-right"></i> About Us</a></li>
+          <li><a href="merchant-navy.html"><i class="fas fa-angle-right"></i> Merchant Navy</a></li>
+          <li><a href="courses.html"><i class="fas fa-angle-right"></i> Courses</a></li>
+          <li><a href="supporters.html"><i class="fas fa-angle-right"></i> Our Supporters</a></li>
+          <li><a href="contact.html"><i class="fas fa-angle-right"></i> Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Our Courses</h4>
+        <ul class="footer-links">
+          <li><a href="courses/bsc-nautical-science.html"><i class="fas fa-angle-right"></i> B.Sc. Nautical Science</a></li>
+          <li><a href="courses/dns.html"><i class="fas fa-angle-right"></i> Diploma in Nautical Science</a></li>
+          <li><a href="courses/be-marine-engineering.html"><i class="fas fa-angle-right"></i> B.E. Marine Engineering</a></li>
+          <li><a href="courses/dme.html"><i class="fas fa-angle-right"></i> Diploma in Marine Eng.</a></li>
+          <li><a href="courses/gme.html"><i class="fas fa-angle-right"></i> Graduate Marine Eng.</a></li>
+          <li><a href="courses/gp-rating.html"><i class="fas fa-angle-right"></i> GP Rating Course</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="footer-contact">
+          <div class="footer-contact-item"><i class="fas fa-phone"></i><span>+91 99999 99999</span></div>
+          <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>info@globalcadetship.com</span></div>
+          <div class="footer-contact-item"><i class="fab fa-whatsapp"></i><span>WhatsApp: +91 99999 99999</span></div>
+          <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>India</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Global Cadet Ship. All Rights Reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Disclaimer</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<button class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Supporters – Global Cadet Ship</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; }
+    .supporters-large-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+    .supporter-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--gray-light);
+      padding: 32px 20px;
+      text-align: center;
+      transition: all 0.3s;
+    }
+    .supporter-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); border-color: rgba(201,168,76,0.3); }
+    .supporter-logo-box {
+      width: 100%; height: 80px;
+      background: var(--gray-light);
+      border-radius: var(--radius);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 14px;
+      color: var(--gray);
+      font-size: 0.75rem;
+      font-weight: 600;
+      border: 1.5px dashed #c5d0de;
+    }
+    .supporter-card h4 { font-size: 0.9rem; font-weight: 700; color: var(--text-dark); margin-bottom: 6px; }
+    .supporter-card p { font-size: 0.78rem; color: var(--text-body); }
+    .supporter-category { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--gold); background: rgba(201,168,76,0.1); padding: 4px 10px; border-radius: 50px; display: inline-block; margin-bottom: 12px; }
+    @media(max-width:900px){ .supporters-large-grid { grid-template-columns: repeat(2,1fr); } }
+    @media(max-width:480px){ .supporters-large-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar-pill-wrap page-nav" id="mainNav">
+  <div class="pill-logo-group">
+    <a href="index.html" class="pill-logo">
+      <img src="assets/images/logo.png" alt="Global Cadet Ship" />
+    </a>
+    <div class="pill-brand-beside">
+      <span class="pbb-name">Global Cadet Ship</span>
+      <span class="pbb-sub">Merchant Navy Career Guidance</span>
+    </div>
+  </div>
+  <div class="nav-pill" id="navPill">
+    <ul class="pill-menu">
+      <li><a href="index.html" class="pill-link">Home</a></li>
+      <li><a href="about.html" class="pill-link">About Us</a></li>
+      <li><a href="merchant-navy.html" class="pill-link">Merchant Navy</a></li>
+      <li class="pill-item-dropdown">
+        <a href="courses.html" class="pill-link">Join Merchant Navy <i class="fas fa-chevron-down"></i></a>
+        <div class="pill-dropdown">
+          <div class="pill-has-sub">
+            <a href="courses/deck-department.html">Deck Department <i class="fas fa-chevron-right"></i></a>
+            <div class="pill-sub-dropdown">
+              <a href="courses/bsc-nautical-science.html">B.Sc. Nautical Science</a>
+              <a href="courses/dns.html">Diploma in Nautical Science (DNS)</a>
+            </div>
+          </div>
+          <div class="pill-has-sub">
+            <a href="courses/engine-department.html">Engine Department <i class="fas fa-chevron-right"></i></a>
+            <div class="pill-sub-dropdown">
+              <a href="courses/be-marine-engineering.html">B.E. Marine Engineering</a>
+              <a href="courses/dme.html">Diploma in Marine Engineering</a>
+              <a href="courses/gme.html">Graduate Marine Engineering (GME)</a>
+            </div>
+          </div>
+          <a href="#">Saloon Department</a>
+          <a href="#">ETO Department</a>
+          <a href="courses/gp-rating.html">GPR Department</a>
+        </div>
+      </li>
+      <li><a href="supporters.html" class="pill-link active">Our Supporters</a></li>
+    </ul>
+  </div>
+  <a href="contact.html" class="pill-cta">Contact Us</a>
+  <div class="pill-hamburger" id="pillHamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<div class="page-hero" style="padding-top:96px;">
+  <div class="container">
+    <h1>Our Supporters</h1>
+    <p>The Global Cadet Ship Program is backed by leading Seafarers' Organizations, Trade Unions, Shipping Companies, and Maritime Training Institutes.</p>
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <i class="fas fa-angle-right"></i>
+      <span>Our Supporters</span>
+    </div>
+  </div>
+</div>
+
+<!-- INTRO -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">Supporters</span>
+      <h2>Organizations That <span>Support Our Mission</span></h2>
+      <p>The Global Cadet Ship Program is a welfare initiative supported by a wide network of maritime industry stakeholders committed to empowering aspiring Indian seafarers.</p>
+      <div class="divider"></div>
+    </div>
+
+    <!-- Welfare Orgs -->
+    <h3 style="font-size:1rem; font-weight:800; color:var(--text-dark); margin-bottom:20px; display:flex; align-items:center; gap:10px;"><i class="fas fa-hands-helping" style="color:var(--gold)"></i> Seafarers' Welfare Organizations</h3>
+    <div class="supporters-large-grid" style="margin-bottom:48px;">
+      <div class="supporter-card">
+        <div class="supporter-logo-box"><i class="fas fa-image"></i><span style="display:block; margin-top:4px;">Logo Coming Soon</span></div>
+        <span class="supporter-category">Welfare Org</span>
+        <h4>Seafarers' Welfare Organization</h4>
+        <p>Supporting seafarer welfare and maritime career development.</p>
+      </div>
+      <div class="supporter-card">
+        <div class="supporter-logo-box"><i class="fas fa-image"></i><span style="display:block; margin-top:4px;">Logo Coming Soon</span></div>
+        <span class="supporter-category">Welfare Org</span>
+        <h4>Global Seafarers Organization</h4>
+        <p>The founding body behind the Global Cadet Ship initiative.</p>
+      </div>
+    </div>
+
+    <!-- Trade Unions -->
+    <h3 style="font-size:1rem; font-weight:800; color:var(--text-dark); margin-bottom:20px; display:flex; align-items:center; gap:10px;"><i class="fas fa-users" style="color:var(--gold)"></i> Seafarers' Trade Unions</h3>
+    <div class="supporters-large-grid" style="margin-bottom:48px;">
+      <div class="supporter-card">
+        <div class="supporter-logo-box"><i class="fas fa-image"></i><span style="display:block; margin-top:4px;">Logo Coming Soon</span></div>
+        <span class="supporter-category">Trade Union</span>
+        <h4>Seafarers' Trade Union</h4>
+        <p>Protecting the rights and interests of seafarers across India.</p>
+      </div>
+    </div>
+
+    <!-- Shipping Companies -->
+    <h3 style="font-size:1rem; font-weight:800; color:var(--text-dark); margin-bottom:20px; display:flex; align-items:center; gap:10px;"><i class="fas fa-ship" style="color:var(--gold)"></i> Shipping Companies</h3>
+    <div class="supporters-large-grid" style="margin-bottom:48px;">
+      <div class="supporter-card">
+        <div class="supporter-logo-box"><i class="fas fa-image"></i><span style="display:block; margin-top:4px;">Logo Coming Soon</span></div>
+        <span class="supporter-category">Shipping Company</span>
+        <h4>Shipping Company</h4>
+        <p>Providing employment and sponsorship opportunities for cadets.</p>
+      </div>
+      <div class="supporter-card">
+        <div class="supporter-logo-box"><i class="fas fa-image"></i><span style="display:block; margin-top:4px;">Logo Coming Soon</span></div>
+        <span class="supporter-category">Shipping Company</span>
+        <h4>Shipping Company</h4>
+        <p>Providing employment and sponsorship opportunities for cadets.</p>
+      </div>
+      <div class="supporter-card">
+        <div class="supporter-logo-box"><i class="fas fa-image"></i><span style="display:block; margin-top:4px;">Logo Coming Soon</span></div>
+        <span class="supporter-category">Shipping Company</span>
+        <h4>Shipping Company</h4>
+        <p>Providing employment and sponsorship opportunities for cadets.</p>
+      </div>
+      <div class="supporter-card">
+        <div class="supporter-logo-box"><i class="fas fa-image"></i><span style="display:block; margin-top:4px;">Logo Coming Soon</span></div>
+        <span class="supporter-category">Shipping Company</span>
+        <h4>Shipping Company</h4>
+        <p>Providing employment and sponsorship opportunities for cadets.</p>
+      </div>
+    </div>
+
+    <!-- Training Institutes -->
+    <h3 style="font-size:1rem; font-weight:800; color:var(--text-dark); margin-bottom:20px; display:flex; align-items:center; gap:10px;"><i class="fas fa-university" style="color:var(--gold)"></i> Maritime Training Institutes</h3>
+    <div class="supporters-large-grid">
+      <div class="supporter-card">
+        <div class="supporter-logo-box"><i class="fas fa-image"></i><span style="display:block; margin-top:4px;">Logo Coming Soon</span></div>
+        <span class="supporter-category">Training Institute</span>
+        <h4>Maritime Academy</h4>
+        <p>DGS-approved institute offering pre-sea training programmes.</p>
+      </div>
+      <div class="supporter-card">
+        <div class="supporter-logo-box"><i class="fas fa-image"></i><span style="display:block; margin-top:4px;">Logo Coming Soon</span></div>
+        <span class="supporter-category">Training Institute</span>
+        <h4>Maritime Academy</h4>
+        <p>DGS-approved institute offering pre-sea training programmes.</p>
+      </div>
+      <div class="supporter-card">
+        <div class="supporter-logo-box"><i class="fas fa-image"></i><span style="display:block; margin-top:4px;">Logo Coming Soon</span></div>
+        <span class="supporter-category">Training Institute</span>
+        <h4>Maritime Academy</h4>
+        <p>DGS-approved institute offering pre-sea training programmes.</p>
+      </div>
+      <div class="supporter-card">
+        <div class="supporter-logo-box"><i class="fas fa-image"></i><span style="display:block; margin-top:4px;">Logo Coming Soon</span></div>
+        <span class="supporter-category">Training Institute</span>
+        <h4>Maritime Academy</h4>
+        <p>DGS-approved institute offering pre-sea training programmes.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-banner">
+  <div class="container">
+    <h2>Want to Partner With Us?</h2>
+    <p>If you are a shipping company, maritime training institute, or seafarers' organization and wish to support our welfare mission, please get in touch.</p>
+    <div class="cta-buttons">
+      <a href="contact.html" class="btn-primary"><i class="fas fa-handshake"></i> Get in Touch</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="assets/images/logo.png" alt="Global Cadet Ship" />
+          <div class="footer-brand-text">
+            <div class="name">Global Cadet Ship</div>
+            <div class="tagline">Merchant Navy Guidance</div>
+          </div>
+        </div>
+        <p class="footer-desc">A welfare initiative providing free Merchant Navy career guidance across India.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html"><i class="fas fa-angle-right"></i> Home</a></li>
+          <li><a href="about.html"><i class="fas fa-angle-right"></i> About Us</a></li>
+          <li><a href="merchant-navy.html"><i class="fas fa-angle-right"></i> Merchant Navy</a></li>
+          <li><a href="courses.html"><i class="fas fa-angle-right"></i> Courses</a></li>
+          <li><a href="supporters.html"><i class="fas fa-angle-right"></i> Our Supporters</a></li>
+          <li><a href="contact.html"><i class="fas fa-angle-right"></i> Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Our Courses</h4>
+        <ul class="footer-links">
+          <li><a href="courses/bsc-nautical-science.html"><i class="fas fa-angle-right"></i> B.Sc. Nautical Science</a></li>
+          <li><a href="courses/dns.html"><i class="fas fa-angle-right"></i> DNS</a></li>
+          <li><a href="courses/be-marine-engineering.html"><i class="fas fa-angle-right"></i> B.E. Marine Eng.</a></li>
+          <li><a href="courses/dme.html"><i class="fas fa-angle-right"></i> DME</a></li>
+          <li><a href="courses/gme.html"><i class="fas fa-angle-right"></i> GME</a></li>
+          <li><a href="courses/gp-rating.html"><i class="fas fa-angle-right"></i> GP Rating</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="footer-contact">
+          <div class="footer-contact-item"><i class="fas fa-phone"></i><span>+91 99999 99999</span></div>
+          <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>info@globalcadetship.com</span></div>
+          <div class="footer-contact-item"><i class="fab fa-whatsapp"></i><span>WhatsApp: +91 99999 99999</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Global Cadet Ship. All Rights Reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Disclaimer</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<button class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

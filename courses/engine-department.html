@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Engine Department – Global Cadet Ship</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; }
+    .dept-main h2 { font-size: 1.7rem; font-weight: 800; color: var(--text-dark); margin-bottom: 16px; }
+    .dept-main p { font-size: 0.95rem; color: var(--text-body); line-height: 1.8; margin-bottom: 14px; }
+    .dept-main ul { margin: 8px 0 20px 0; padding: 0; list-style: none; }
+    .dept-main ul li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.93rem; color: var(--text-body); line-height: 1.7; margin-bottom: 8px; }
+    .dept-main ul li::before { content: ''; display: inline-block; width: 7px; height: 7px; background: var(--navy); border-radius: 50%; flex-shrink: 0; margin-top: 7px; }
+    .career-section h3 { font-size: 1rem; font-weight: 800; color: var(--navy); margin-bottom: 18px; display: flex; align-items: center; gap: 8px; }
+    .career-section h3 i { color: var(--gold); }
+    .dept-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+    @media(max-width:860px){ .dept-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar-pill-wrap page-nav" id="mainNav">
+  <div class="pill-logo-group">
+    <a href="../index.html" class="pill-logo">
+      <img src="../assets/images/logo.png" alt="Global Cadet Ship" />
+    </a>
+    <div class="pill-brand-beside">
+      <span class="pbb-name">Global Cadet Ship</span>
+      <span class="pbb-sub">Merchant Navy Career Guidance</span>
+    </div>
+  </div>
+  <div class="nav-pill" id="navPill">
+    <ul class="pill-menu">
+      <li><a href="../index.html" class="pill-link">Home</a></li>
+      <li><a href="../about.html" class="pill-link">About Us</a></li>
+      <li><a href="../merchant-navy.html" class="pill-link">Merchant Navy</a></li>
+      <li class="pill-item-dropdown">
+        <a href="../courses.html" class="pill-link active">Join Merchant Navy <i class="fas fa-chevron-down"></i></a>
+        <div class="pill-dropdown">
+          <div class="pill-has-sub">
+            <a href="../courses/deck-department.html">Deck Department <i class="fas fa-chevron-right"></i></a>
+            <div class="pill-sub-dropdown">
+              <a href="../courses/bsc-nautical-science.html">B.Sc. Nautical Science</a>
+              <a href="../courses/dns.html">Diploma in Nautical Science (DNS)</a>
+            </div>
+          </div>
+          <div class="pill-has-sub">
+            <a href="../courses/engine-department.html" class="active-dept">Engine Department <i class="fas fa-chevron-right"></i></a>
+            <div class="pill-sub-dropdown">
+              <a href="../courses/be-marine-engineering.html">B.E. Marine Engineering</a>
+              <a href="../courses/dme.html">Diploma in Marine Engineering</a>
+              <a href="../courses/gme.html">Graduate Marine Engineering (GME)</a>
+            </div>
+          </div>
+          <a href="#">Saloon Department</a>
+          <a href="#">ETO Department</a>
+          <a href="../courses/gp-rating.html">GPR Department</a>
+        </div>
+      </li>
+      <li><a href="../supporters.html" class="pill-link">Our Supporters</a></li>
+    </ul>
+  </div>
+  <a href="../contact.html" class="pill-cta">Contact Us</a>
+  <div class="pill-hamburger" id="pillHamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero" style="padding-top:96px;">
+  <div class="container">
+    <h1>Engine Department</h1>
+    <p>Propulsion, Machinery Operations &amp; Marine Engineering</p>
+    <div class="breadcrumb">
+      <a href="../index.html">Home</a>
+      <i class="fas fa-angle-right"></i>
+      <a href="../courses.html">Join Merchant Navy</a>
+      <i class="fas fa-angle-right"></i>
+      <span>Engine Department</span>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<section class="section">
+  <div class="container">
+    <div class="dept-grid">
+
+      <div class="dept-main">
+        <div class="img-placeholder" style="height:260px; margin-bottom:32px; border-radius:var(--radius-lg);">
+          <i class="fas fa-image"></i>
+          <span>Engine Department Photo</span>
+        </div>
+
+        <h2>Engine Department</h2>
+        <p>The Engine Department manages:</p>
+        <ul>
+          <li>Main propulsion engines</li>
+          <li>Auxiliary machinery</li>
+          <li>Boilers and pumps</li>
+          <li>Engine room systems</li>
+          <li>Fuel systems</li>
+          <li>Refrigeration systems</li>
+          <li>Power generation equipment</li>
+          <li>Ship machinery maintenance</li>
+        </ul>
+        <p>Marine Engineers ensure smooth and safe operation of all mechanical and technical systems onboard.</p>
+
+        <div style="margin-top:24px; display:flex; gap:12px; flex-wrap:wrap;">
+          <a href="be-marine-engineering.html" class="btn-primary"><i class="fas fa-graduation-cap"></i> B.E. Marine Engineering</a>
+          <a href="dme.html" class="btn-outline"><i class="fas fa-graduation-cap"></i> DME</a>
+          <a href="gme.html" class="btn-outline"><i class="fas fa-graduation-cap"></i> GME</a>
+        </div>
+      </div>
+
+      <div class="career-section">
+        <h3><i class="fas fa-chart-line"></i> Career Progression</h3>
+        <div class="career-path">
+          <div class="career-step top">B.E. Marine / GME / DME</div>
+          <div class="career-arrow"><i class="fas fa-arrow-down"></i><small>6–12 Months Sea Service</small></div>
+          <div class="career-step">Trainee Marine Engineer</div>
+          <div class="career-arrow"><i class="fas fa-arrow-down"></i></div>
+          <div class="career-step">MEO Class IV Exam</div>
+          <div class="career-arrow"><i class="fas fa-arrow-down"></i><small>Approx. 12 Months Sea Service</small></div>
+          <div class="career-step">4th Engineer</div>
+          <div class="career-arrow"><i class="fas fa-arrow-down"></i></div>
+          <div class="career-step">MEO Class II Exam</div>
+          <div class="career-arrow"><i class="fas fa-arrow-down"></i></div>
+          <div class="career-step">3rd Engineer</div>
+          <div class="career-arrow"><i class="fas fa-arrow-down"></i></div>
+          <div class="career-step">2nd Engineer</div>
+          <div class="career-arrow"><i class="fas fa-arrow-down"></i><small>Approx. 18 Months Sea Service</small></div>
+          <div class="career-step">MEO Class I Exam</div>
+          <div class="career-arrow"><i class="fas fa-arrow-down"></i></div>
+          <div class="career-step highlight">Chief Engineer &#9875;</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-banner">
+  <div class="container">
+    <h2>Start Your Marine Engineer Career</h2>
+    <p>Get free counselling on eligibility, courses, and admission for the Engine Department.</p>
+    <div class="cta-buttons">
+      <a href="../contact.html" class="btn-primary"><i class="fas fa-phone"></i> Get Free Guidance</a>
+      <a href="../courses.html" class="btn-outline"><i class="fas fa-ship"></i> All Departments</a>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><img src="../assets/images/logo.png" alt="Global Cadet Ship" /><div class="footer-brand-text"><div class="name">Global Cadet Ship</div><div class="tagline">Merchant Navy Guidance</div></div></div>
+        <p class="footer-desc">Free Merchant Navy career guidance across India.</p>
+        <div class="footer-social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-whatsapp"></i></a></div>
+      </div>
+      <div class="footer-col"><h4>Quick Links</h4><ul class="footer-links"><li><a href="../index.html"><i class="fas fa-angle-right"></i> Home</a></li><li><a href="../about.html"><i class="fas fa-angle-right"></i> About Us</a></li><li><a href="../courses.html"><i class="fas fa-angle-right"></i> Join Merchant Navy</a></li><li><a href="../contact.html"><i class="fas fa-angle-right"></i> Contact Us</a></li></ul></div>
+      <div class="footer-col"><h4>Courses</h4><ul class="footer-links"><li><a href="bsc-nautical-science.html"><i class="fas fa-angle-right"></i> B.Sc. Nautical Science</a></li><li><a href="dns.html"><i class="fas fa-angle-right"></i> DNS</a></li><li><a href="be-marine-engineering.html"><i class="fas fa-angle-right"></i> B.E. Marine Eng.</a></li><li><a href="dme.html"><i class="fas fa-angle-right"></i> DME</a></li><li><a href="gme.html"><i class="fas fa-angle-right"></i> GME</a></li><li><a href="gp-rating.html"><i class="fas fa-angle-right"></i> GP Rating</a></li></ul></div>
+      <div class="footer-col"><h4>Contact Us</h4><div class="footer-contact"><div class="footer-contact-item"><i class="fas fa-phone"></i><span>+91 99999 99999</span></div><div class="footer-contact-item"><i class="fas fa-envelope"></i><span>info@globalcadetship.com</span></div></div></div>
+    </div>
+    <div class="footer-bottom"><span>&copy; 2025 Global Cadet Ship. All Rights Reserved.</span></div>
+  </div>
+</footer>
+<button class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

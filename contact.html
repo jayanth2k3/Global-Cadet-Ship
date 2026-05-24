@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us – Global Cadet Ship</title>
+  <meta name="description" content="Contact Global Cadet Ship for free Merchant Navy career guidance and counselling." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; }
+    .contact-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 56px; align-items: start; }
+    .contact-form-wrap { background: var(--white); border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); padding: 40px; border: 1px solid var(--gray-light); }
+    .contact-form-wrap h3 { font-size: 1.3rem; font-weight: 800; color: var(--text-dark); margin-bottom: 6px; }
+    .contact-form-wrap p { font-size: 0.88rem; color: var(--text-body); margin-bottom: 28px; }
+    .form-group { margin-bottom: 20px; }
+    .form-group label { display: block; font-size: 0.82rem; font-weight: 700; color: var(--text-dark); margin-bottom: 7px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1.5px solid var(--gray-light);
+      border-radius: var(--radius);
+      font-size: 0.9rem;
+      font-family: inherit;
+      color: var(--text-dark);
+      background: var(--off-white);
+      transition: border-color 0.2s, box-shadow 0.2s;
+      outline: none;
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px rgba(201,168,76,0.12);
+      background: var(--white);
+    }
+    .form-group textarea { resize: vertical; min-height: 120px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .btn-submit {
+      width: 100%;
+      background: var(--gold);
+      color: var(--white);
+      padding: 14px 30px;
+      border: none;
+      border-radius: 50px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      font-family: inherit;
+      cursor: pointer;
+      transition: all 0.25s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      box-shadow: 0 4px 14px rgba(201,168,76,0.35);
+    }
+    .btn-submit:hover { background: var(--navy); }
+    .contact-info { display: flex; flex-direction: column; gap: 24px; }
+    .contact-info-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--gray-light);
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+      transition: all 0.2s;
+    }
+    .contact-info-card:hover { box-shadow: var(--shadow-lg); border-color: rgba(201,168,76,0.3); }
+    .contact-info-icon {
+      width: 52px; height: 52px;
+      background: rgba(201,168,76,0.1);
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem;
+      color: var(--gold);
+      flex-shrink: 0;
+      border: 1px solid rgba(201,168,76,0.2);
+    }
+    .contact-info-text h4 { font-size: 0.92rem; font-weight: 800; color: var(--text-dark); margin-bottom: 5px; }
+    .contact-info-text p { font-size: 0.85rem; color: var(--text-body); line-height: 1.6; }
+    .contact-info-text a { color: var(--navy); font-weight: 600; }
+    .contact-info-text a:hover { color: var(--gold); }
+    .free-badge {
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      color: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      text-align: center;
+      margin-top: 8px;
+    }
+    .free-badge h4 { font-size: 1rem; font-weight: 800; margin-bottom: 6px; }
+    .free-badge p { font-size: 0.83rem; opacity: 0.9; }
+    @media(max-width:900px){ .contact-grid { grid-template-columns: 1fr; } .form-row { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar-pill-wrap page-nav" id="mainNav">
+  <div class="pill-logo-group">
+    <a href="index.html" class="pill-logo">
+      <img src="assets/images/logo.png" alt="Global Cadet Ship" />
+    </a>
+    <div class="pill-brand-beside">
+      <span class="pbb-name">Global Cadet Ship</span>
+      <span class="pbb-sub">Merchant Navy Career Guidance</span>
+    </div>
+  </div>
+  <div class="nav-pill" id="navPill">
+    <ul class="pill-menu">
+      <li><a href="index.html" class="pill-link">Home</a></li>
+      <li><a href="about.html" class="pill-link">About Us</a></li>
+      <li><a href="merchant-navy.html" class="pill-link">Merchant Navy</a></li>
+            <li class="pill-item-dropdown">
+        <a href="courses.html" class="pill-link">Join Merchant Navy <i class="fas fa-chevron-down"></i></a>
+        <div class="pill-dropdown">
+          <div class="pill-has-sub">
+            <a href="courses/deck-department.html">Deck Department <i class="fas fa-chevron-right"></i></a>
+            <div class="pill-sub-dropdown">
+              <a href="courses/bsc-nautical-science.html">B.Sc. Nautical Science</a>
+              <a href="courses/dns.html">Diploma in Nautical Science (DNS)</a>
+            </div>
+          </div>
+          <div class="pill-has-sub">
+            <a href="courses/engine-department.html">Engine Department <i class="fas fa-chevron-right"></i></a>
+            <div class="pill-sub-dropdown">
+              <a href="courses/be-marine-engineering.html">B.E. Marine Engineering</a>
+              <a href="courses/dme.html">Diploma in Marine Engineering</a>
+              <a href="courses/gme.html">Graduate Marine Engineering (GME)</a>
+            </div>
+          </div>
+          <a href="#">Saloon Department</a>
+          <a href="#">ETO Department</a>
+          <a href="courses/gp-rating.html">GPR Department</a>
+        </div>
+      </li>
+      <li><a href="supporters.html" class="pill-link">Our Supporters</a></li>
+    </ul>
+  </div>
+  <a href="contact.html" class="pill-cta">Contact Us</a>
+  <div class="pill-hamburger" id="pillHamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<div class="page-hero" style="padding-top:96px;">
+  <div class="container">
+    <h1>Contact Us</h1>
+    <p>Reach out for free Merchant Navy career guidance, counselling, and admissions support.</p>
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <i class="fas fa-angle-right"></i>
+      <span>Contact Us</span>
+    </div>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- FORM -->
+      <div class="contact-form-wrap">
+        <h3>Send Us a Message</h3>
+        <p>Fill in the form below and our counselling team will get back to you as soon as possible — completely free.</p>
+        <form action="#" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name *</label>
+              <input type="text" name="first_name" placeholder="Your first name" required />
+            </div>
+            <div class="form-group">
+              <label>Last Name *</label>
+              <input type="text" name="last_name" placeholder="Your last name" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email Address *</label>
+            <input type="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label>Phone Number *</label>
+            <input type="tel" name="phone" placeholder="+91 99999 99999" required />
+          </div>
+          <div class="form-group">
+            <label>Course of Interest</label>
+            <select name="course">
+              <option value="">-- Select a Course --</option>
+              <option>B.Sc. Nautical Science (3 Years)</option>
+              <option>Diploma in Nautical Science – DNS (1 Year)</option>
+              <option>B.E. Marine Engineering (4 Years)</option>
+              <option>Diploma in Marine Engineering – DME (2 Years)</option>
+              <option>Graduate Marine Engineering – GME (1 Year)</option>
+              <option>GP Rating Course (6 Months)</option>
+              <option>General Career Guidance</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Educational Qualification</label>
+            <select name="qualification">
+              <option value="">-- Select your qualification --</option>
+              <option>10th Pass (SSC)</option>
+              <option>12th Pass (HSC) – Science</option>
+              <option>12th Pass (HSC) – Other</option>
+              <option>Diploma (Engineering)</option>
+              <option>BE / B.Tech (Mechanical / Naval Arch.)</option>
+              <option>Other Graduate</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Your Message / Query</label>
+            <textarea name="message" placeholder="Tell us about your background and what you'd like to know..."></textarea>
+          </div>
+          <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i> Send Message – It's Free!</button>
+        </form>
+      </div>
+
+      <!-- INFO -->
+      <div class="contact-info">
+        <div class="free-badge">
+          <h4><i class="fas fa-hand-holding-heart"></i> 100% Free Counselling</h4>
+          <p>We never charge students for career guidance, counselling, or information. Our support is completely free of cost.</p>
+        </div>
+        <div class="contact-info-card">
+          <div class="contact-info-icon"><i class="fas fa-phone"></i></div>
+          <div class="contact-info-text">
+            <h4>Phone / Call</h4>
+            <p><a href="tel:+919999999999">+91 99999 99999</a></p>
+            <p>Available: Mon – Sat, 9 AM – 7 PM</p>
+          </div>
+        </div>
+        <div class="contact-info-card">
+          <div class="contact-info-icon"><i class="fab fa-whatsapp"></i></div>
+          <div class="contact-info-text">
+            <h4>WhatsApp</h4>
+            <p><a href="https://wa.me/919999999999">+91 99999 99999</a></p>
+            <p>Message us anytime on WhatsApp</p>
+          </div>
+        </div>
+        <div class="contact-info-card">
+          <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+          <div class="contact-info-text">
+            <h4>Email Us</h4>
+            <p><a href="mailto:info@globalcadetship.com">info@globalcadetship.com</a></p>
+            <p>We respond within 24 hours</p>
+          </div>
+        </div>
+        <div class="contact-info-card">
+          <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="contact-info-text">
+            <h4>Location</h4>
+            <p>India</p>
+            <p>Serving students across all states</p>
+          </div>
+        </div>
+        <div class="contact-info-card">
+          <div class="contact-info-icon"><i class="fab fa-youtube"></i></div>
+          <div class="contact-info-text">
+            <h4>Follow Us</h4>
+            <p>Stay updated on career guidance, course information, and maritime industry news on our social channels.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="assets/images/logo.png" alt="Global Cadet Ship" />
+          <div class="footer-brand-text">
+            <div class="name">Global Cadet Ship</div>
+            <div class="tagline">Merchant Navy Guidance</div>
+          </div>
+        </div>
+        <p class="footer-desc">A welfare initiative by the Global Seafarers Organization, providing free Merchant Navy career guidance.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html"><i class="fas fa-angle-right"></i> Home</a></li>
+          <li><a href="about.html"><i class="fas fa-angle-right"></i> About Us</a></li>
+          <li><a href="merchant-navy.html"><i class="fas fa-angle-right"></i> Merchant Navy</a></li>
+          <li><a href="courses.html"><i class="fas fa-angle-right"></i> Courses</a></li>
+          <li><a href="supporters.html"><i class="fas fa-angle-right"></i> Our Supporters</a></li>
+          <li><a href="contact.html"><i class="fas fa-angle-right"></i> Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Our Courses</h4>
+        <ul class="footer-links">
+          <li><a href="courses/bsc-nautical-science.html"><i class="fas fa-angle-right"></i> B.Sc. Nautical Science</a></li>
+          <li><a href="courses/dns.html"><i class="fas fa-angle-right"></i> DNS</a></li>
+          <li><a href="courses/be-marine-engineering.html"><i class="fas fa-angle-right"></i> B.E. Marine Eng.</a></li>
+          <li><a href="courses/dme.html"><i class="fas fa-angle-right"></i> DME</a></li>
+          <li><a href="courses/gme.html"><i class="fas fa-angle-right"></i> GME</a></li>
+          <li><a href="courses/gp-rating.html"><i class="fas fa-angle-right"></i> GP Rating</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="footer-contact">
+          <div class="footer-contact-item"><i class="fas fa-phone"></i><span>+91 99999 99999</span></div>
+          <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>info@globalcadetship.com</span></div>
+          <div class="footer-contact-item"><i class="fab fa-whatsapp"></i><span>WhatsApp: +91 99999 99999</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Global Cadet Ship. All Rights Reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Disclaimer</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<button class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
